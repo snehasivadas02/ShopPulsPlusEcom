@@ -28,7 +28,7 @@ import CategoryProduct from './pages/CategoryProduct';
 import CartPage from './pages/CartPage';
 import AdminOrders from './pages/Admin/AdminOrders';
 
-axios.defaults.baseURL = 'http://localhost:4000/'
+axios.defaults.baseURL = 'https://shoppulsplusecom.onrender.com/'
 
 
 function App() {
