@@ -16,10 +16,15 @@ connectDB();
 
 //rest object
 const app = express();
-
+const corsOptions = {
+    origin: 'https://shop-puls-plus-1whfp9iwc-sneha-ss-projects-76e9ff01.vercel.app/',
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type'],
+  };
+  app.use(cors(corsOptions));
+  
 
 //middleware
-app.use(cors());
 app.use(express.json())
 app.use(morgan('dev'))
 
