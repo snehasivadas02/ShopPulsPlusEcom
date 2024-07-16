@@ -34,7 +34,7 @@ const Products = () => {
           <h1 className="text-center">All Products List</h1>
           <div className="d-flex flex-wrap">
             {products?.map((p) => {
-              const imgUrl = `/api/v1/product/product-photo/${p._id}`;
+              const imgUrl = `${process.env.REACT_APP_API}api/v1/product/product-photo/${p._id}`;
               console.log(`Image URL for product ${p.name}: ${imgUrl}`);
               return (
                 <Link key={p._id} to={`/dashboard/admin/product/${p.slug}`} className="product-link">
